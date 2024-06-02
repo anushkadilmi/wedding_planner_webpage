@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-QF4KIT6fjAwFvxz+XDEs9n6JWpxdzVB6VvDME8h4IVeqsFTKD9C7tGdFtfHQVpZe" crossorigin="anonymous">
+    
+
+
+    
+    <style>
+        .social-icon img {
+            margin-right: 10px;
+        }
+        body {
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+        .carousel-inner img {
+            width: 100%;
+            height: auto;
+        }
+        .bg-image {
+            background-image: url('SLIDER-01.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding-top: 150px;
+        }
+        .bg-image h1, .bg-image h2, .bg-image p {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .hover-header-container h6 {
+      color: black; 
+      transition: color 0.1s; 
+    }
+
+    .hover-header-container:hover h6 {
+      color: purple; 
+    
+    }
+
+    .custom-bg-color {
+    background-color: #f4e7ea;
+}
+
+.custom-purple-text {
+    color: purple; 
+}  
+
+.custom-no-underline {
+    text-decoration: none;
+}
+
+.img-container {
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+        }
+        .img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .text-field {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+           
+            color: rgb(75, 69, 75);
+            display: none;
+            opacity: 0.8;
+            border: none;
+            outline: none;
+            resize: none;
+            text-align: bottom;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .img-caption {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+            color: rgb(16, 3, 3);
+            padding: 10px;
+            border-radius: 5px;
+            text-align: bottom;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .jumbotron {
+            background-image: url("home20-slider_1-1170x548.jpg");
+            background-size: "width=3000px height=1880px";
+            background-position:center;
+            color: white;
+        }
+       
+        .custom-purple-text {
+    color: purple; 
+
+    
+} 
+.cata-item-box {
+        border: 2px solid rgb(5, 5, 5);
+        padding: 10px;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    </style>
+    
+
+
+
+</head>
+<body> 
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="Web-Logo-White-background-02.png" width="180px" height="70px"></a>
+        <button class="navbar-toggler" type="button"data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="AboutUs.html">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="OurServices.html">Our Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="ContactUs.html">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+
+
+
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="home20-slider_2.jpg"style="width: 1500px; height: 600px;"  class="d-block" alt="Image 1">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Wedding day is your DREAM DAY</h5>
+              <h2>THE WEDDING PLANNER</h2>
+              <p>Your Vision. Your Day. We make it Happen.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src= "background_04.jpg"style="width: 1500px; height: 600px;"  class="d-block" alt="Image 2">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Have A Magical Wedding with</h5>
+                <h2>THE WEDDING PLANNER</h2>
+                <p>Your Vision. Your Day. We make it Happen.</p>  
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="SLIDER-01.jpg"style="width: 1500px; height: 600px;" class="d-block" alt="Image 3">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>We are... </h5>
+                <h2>THE WEDDING PLANNER</h2>
+                <p>Your Vision. Your Day. We make it Happen.</p>  
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<br>
+<br>
+<br>
+
+<em><h6 class="text-center" style="color: purple;">LOOKING FOR THE BEST WEDDING PLANNERS IN SRI LANKA?</h6>
+    <h3 class="text-center" style="color: purple;"> We Are Here To Help You.</h3></em>
+    <hr class="my-4">
+                      <div class="container-fluid bg-white hover-header-container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="text-bg-light  p-5 mt-1 mb-5">
+                                    <div class="iconbox-wrap">
+                                        <h6>Industry Professional</h6>
+                                        <p>Plan your wedding with industry professionals, with more than 12 years of experience.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="text-bg-light p-5 mt-1 mb-5">
+                                    <div class="iconbox-wrap">
+                                      <h6>Discounts</h6>
+                                        <p>Exclusive discounts from selected service providers &amp; suppliers</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="text-bg-light p-5 mt-1 mb-5">
+                                    <div class="iconbox-wrap">
+                                      <h6>Friendly Service</h6>
+                                        <p>We will take away any stress and help you have a wonderful wedding planning experience.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="text-bg-light p-5 mt-1 mb-5">
+                                    <div class="iconbox-wrap">
+                                      <h6>Creativity</h6>
+                                        <p>Creative themes &amp; design concepts.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="text-bg-light p-5 mt-1 mb-5">
+                                    <div class="iconbox-wrap">
+                                      <h6>Tailor made solutions</h6>
+                                        <p>Many tailor-made wedding planning solutions for you to choose according to your requirements.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="text-bg-light p-5 mt-1 mb-5">
+                                    <div class="iconbox-wrap">
+                                      <h6>Technology</h6>
+                                        <p>Plan your wedding in a modern way using cutting edge technology</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+                     
+  <section class="custom-bg-color py-5" id="section_2yp127oqjf">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h5 class="mb-4 custom-purple-text"><i>Wedding day is your dream day.</i></h5>
+                <h4 class="mb-4 custom-purple-text">We Make It Happen.</h4>
+                <p>Your Vision. Your Style. Your Passion. Your Day. We make it Happen.</p>
+                <p>Often people think that hiring a wedding/event planner is going to be a huge expense, but most of the time we can actually save you money. As well as passing on our supplier discounts directly to you, we will work with you to manage your wedding budget. You tell us what you want to spend and we will make sure you stick to this; we will work with you to get you the best value for money on every last detail. We are your best wedding planner in <a href="https://en.wikipedia.org/wiki/Sri_Lanka" class="custom-purple-text custom-no-underline">Sri Lanka</a>.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="img-container" style="width: 300px; height: 400px;">
+                    <img src="17.jpg" alt="Image 1" class="img-fluid" decoding="async" loading="lazy" data-bs-toggle="modal" data-bs-target="#imageModal1" />
+                    <div class="img-caption"><h3>Your Vision.</h3></div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="img-container" style="width: 300px; height: 400px;">
+                    <img src="porocna_fotografija_015-1-1353x900.jpg" alt="Image 2" class="img-fluid" decoding="async" loading="lazy" data-bs-toggle="modal" data-bs-target="#imageModal2" />
+                    <div class="img-caption"><h3>Your Style</h3></div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="img-container" style="width: 300px; height: 400px;">
+                    <img src="second.jpg" alt="Image 3" class="img-fluid" decoding="async" loading="lazy" data-bs-toggle="modal" data-bs-target="#imageModal3" />
+                    <div class="img-caption"><h3>Your Passion</h3></div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="img-container" style="width: 300px; height: 400px;">
+                    <img src="pic11.jpg" alt="Image 4" class="img-fluid" decoding="async" loading="lazy" data-bs-toggle="modal" data-bs-target="#imageModal4" />
+                    <div class="img-caption"><h3>Your Day</h3></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        
+        <br><br><br><br><br><br><br><br><br>
+        <h1 class="display-4">We Make It Happen</h1>
+        <p class="lead">Every bride and every groom always wanted to have a magical wedding that they deserved.</p>
+        <a class="btn btn-secondary btn-lg" href="ContactUs.html" role="button">Here we are</a><br><br><br><br><br><br>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+<section class="cata-section cata-section-container-stretch" id="section_vh80jcwvx4" style="margin-bottom: 50px;">
+    <div class="cata-container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3 class="mb-4 custom-purple-text">Our Packages</h3>
+                
+                <p>Plan your wedding with the Best Wedding Planners in Sri Lanka?</p>
+                <p>You tell us what you want to spend and we will make sure you stick to this; we will work with you to get you the best value for money on every last detail.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cata-section cata-section-container-stretch" id="section_vh80jcwvx4" style="margin-bottom: 95px;">
+    <div class="cata-container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Half Package -->
+            <div class="col">
+                <div class="card">
+                    <img src="background_08.jpg" class="card-img-top" alt="Half Package">
+                    <div class="card-body text-center">
+                        <h4 class="card-title" style="color: purple;">Half Package</h4>
+                        <div class="card-text">
+                            <h1 class="price-discount"><i><b>15%<br> Discount</i></b></h1>
+
+                            <p class="short-desc">We can help you at any stage of the wedding planning, till your dream day.</p>
+                            <h3 class="booking-status" style="color: purple;"><strong>Booking Now Open</strong></h3>
+                        </div>
+                        <br>
+                        <a href="OurServices.html" class="btn btn-outline-primary" target="_blank" title="Get Now">GET NOW</a></br>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Full Package -->
+            <div class="col">
+                <div class="card">
+                    <img src="background_34.jpg" class="card-img-top" alt="Full Package">
+                    <div class="card-body text-center">
+                        <h4 class="card-title" style="color: purple;">Full Package</h4>
+                        <div class="card-text">
+                            <h1 class="price-discount"><i><b>20%<br> Discount</i></b></h1>
+                            <p class="short-desc">This package is for the couples who want guidance in planning their wedding from the beginning to the end.</p>
+                            <h3 class="booking-status" style="color: purple;">Booking Now Open</h3>
+                        </div><br>
+                        <a href="OurServices.html" class="btn btn-outline-primary"target="_blank" title="Get Now">GET NOW</a></br>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day Package -->
+            <div class="col">
+                <div class="card">
+                    <img src="background_33.jpg" class="card-img-top" alt="Day Package">
+                    <div class="card-body text-center">
+                        <h4 class="card-title" style="color: purple;">Day Package</h4>
+                        <div class="card-text">
+                            <h1 class="price-discount"><i><b>10% <br>Discount</i></b></h1>
+                            <p class="short-desc">Your peace of mind on your wedding day will be worth every rupee that you have spent on your big day.</p>
+                            <h3 class="booking-status" style="color: purple;">Booking Now Open</h3>
+                        </div><br>
+                        <a href="OurServices.html" class="btn btn-outline-primary" target="_blank" title="Get Now">GET NOW</a></br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<br><br><br><br>
+
+                    <h3 class="heading-title style1 text-center font-playfairdisplay" style="color: purple;">
+                        <span><i><h5>Our Subsidiaries &amp; Partners</h5></i></span>
+                    </h3>
+                    <h3 class="text-center" style="color: purple;">The Wedding Planner LK</h3>
+                    <div id="cata_empty_space_jtj8l" class="cata-empty-space cata-element" style="height: 20px"></div>
+                    <div class="cata-brands-horizontal" style="display: flex; align-items: center; justify-content: center;">
+                        <div class="cata-item-box">
+                            <img width="251" height="133" src="mass-logo.png" class="attachment-full" alt="" decoding="async" loading="lazy" />
+                        </div>
+                        <div class="cata-item-box">
+                            <img width="251" height="133" src="MYE-ASIA.png" class="attachment-full" alt="" decoding="async" loading="lazy" />
+                        </div>
+                        <div class="cata-item-box">
+                            <img width="251" height="133" src="MY-TICKETS.png" class="attachment-full" alt="" decoding="async" loading="lazy" />
+                        </div>
+                        <div class="cata-item-box">
+                            <img width="251" height="133" src="MY-EVENTS.png" class="attachment-full" alt="" decoding="async" loading="lazy" />
+                        </div>
+                    </div>
+                
+    
+        
+                    <br><br><br><br><br><br><br>
+
+
+<footer class="p-4 mb-3 bg-black text-white">
+    <div class="container">
+        <div class="text-center">
+            <div class="cata-footer-contact-info">
+                <div class="cata-footer-logo">
+                    <img src="footer-logo-BW.png" alt="Footer logo" /><br><br><br>
+                </div><br>
+                <p><span class="iconn ti-location-pin"></span><i>33/23/1/1, 1st Lane, Medawelikada Road, Rajagiriya. 10100. Sri Lanka</i></p>
+                <p><span class="iconn ti-mobile"></span><i>+94 114 544 994</i></p>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/theweddingplannersrilanka" class="social-icon"><img src="36pic.png" alt="Facebook" width="50px" height="50px"></a>
+                <a href="https://www.instagram.com/theweddingplannerlk" class="social-icon"><img src="38pic.jpeg" alt="Instagram" width="50px" height="50px"></a>
+                <a href="https://twitter.com/theweddinglk" class="social-icon"><img src="37pic.png" alt="Twitter" width="50px" height="50px"></a>
+            </div>
+            <br>   
+            <p>© 2023 <span>The Wedding Planner LK</span>. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
